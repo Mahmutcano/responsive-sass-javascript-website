@@ -16,10 +16,12 @@ const closeNav = () => {
 
 closeNavBtn.addEventListener("click", closeNav);
 
+
+
 // SWİPER SLİDE
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 10,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

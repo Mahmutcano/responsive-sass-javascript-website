@@ -552,6 +552,10 @@ header .container .header_content p {
   width: 80%;
 }
 
+.swiper .swiper-wrapper {
+  margin-bottom: 4rem;
+}
+
 .swiper .swiper-wrapper .swiper-slide {
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   color: #ffffff;
@@ -591,10 +595,191 @@ header .container .header_content p {
   overflow: hidden;
 }
 
+.swiper-pagination-bullet {
+  background: #480ca8;
+}
+
 /* ============================ MEDİA QUERISES (SMALL DEVICES) ============================ */
 @media screen and (max-width: 600px) {
   .swiper .swiper-wrapper .swiper-slide {
     padding: 1.5rem;
+  }
+}
+
+#appoinment .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 47% 47%;
+      grid-template-columns: 47% 47%;
+  gap: 6;
+}
+
+#appoinment .container .info p {
+  margin: 0.5rem 0 2rem;
+}
+
+#appoinment .container .info article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+#appoinment .container .info article small {
+  margin-top: 0.5rem;
+  display: block;
+}
+
+#appoinment .container .info article .info_icon {
+  background: #f72585;
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.2em;
+}
+
+#appoinment .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+#appoinment .container form .form_group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+#appoinment .container form .form_group input,
+#appoinment .container form .form_group textarea {
+  background: #ffffff;
+  padding: 0.85rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.4rem;
+  resize: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* ============================ MEDİA QUERISES (MEDIUM DEVICES) ============================ */
+@media screen and (max-width: 1024px) {
+  #appoinment .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #appoinment .container .info h2,
+  #appoinment .container .info p {
+    text-align: center;
+  }
+}
+
+footer {
+  background: #0c031b;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 6rem;
+  margin-top: 6rem;
+}
+
+footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  font-size: 0.85rem;
+}
+
+footer .container a {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+footer .container a:hover {
+  color: #ffffff;
+}
+
+footer .container a > h3 {
+  color: #ffffff;
+}
+
+footer .container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+footer .container article > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6rem;
+}
+
+footer .container article > h3 {
+  color: #ffffff;
+}
+
+footer .container article .footer_socials {
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+footer .copyright {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+}
+
+/* ============================ MEDİA QUERISES (MEDIUM DEVICES) ============================ */
+@media screen and (max-width: 1024px) {
+  footer .container {
+    gap: 2.5rem;
+  }
+}
+
+/* ============================ MEDİA QUERISES (SMALL DEVICES) ============================ */
+@media screen and (max-width: 600px) {
+  footer .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+  footer .container .btn-primary,
+  footer .container .footer_socials {
+    margin: 0 auto;
+  }
+  footer .container article > div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
